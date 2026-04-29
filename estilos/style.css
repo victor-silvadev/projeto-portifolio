@@ -13,10 +13,20 @@
   box-sizing: border-box;
 }
 
+body.escuro {
+  --fundo-principal: #121212;
+  --texto: #e0e0e0;
+  --texto-inverso: #121212;
+  --destaque: #369d4f;
+  --destaque-inverso: #16401C;
+  --fundo-card: #1e1e1e;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
+  transition: background-color .5s, color .5s;
 }
 
 header {
